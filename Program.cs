@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
+ 
 
 namespace LineComparison
 {
@@ -7,7 +8,7 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            ArrayList length = new ArrayList();
+            List<double> length = new List<double>();
             Console.WriteLine("Welcome to Line Comparison Problem");
             for (int i = 0; i < 2; i++)
             {
@@ -25,6 +26,12 @@ namespace LineComparison
             }
             if (length[0] == length[1])
                 Console.WriteLine("Both lines are equal");
+
+            if (length[0] > length[1])
+                Console.WriteLine("line 1 is greater");
+            else
+                Console.WriteLine("line 2 is greater");
+
         }
     }
 }
