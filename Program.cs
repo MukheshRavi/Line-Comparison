@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+ 
 
 namespace LineComparison
 {
@@ -25,10 +26,12 @@ namespace LineComparison
             }
             if (length[0] == length[1])
                 Console.WriteLine("Both lines are equal");
+
             if (length[0] > length[1])
                 Console.WriteLine("line 1 is greater");
             else
                 Console.WriteLine("line 2 is greater");
+
         }
     }
 }
